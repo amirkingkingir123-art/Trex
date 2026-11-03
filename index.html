@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تیرانوزوروس رکس؛ پادشاه ستمگر</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1a120b;--fg:#f3e9dc;--card:#2a1d12;--mut:#c4b29c;--acc:#ff8a1f;--acc2:#ffd166;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#fbf3e6;--fg:#2b1b0e;--card:#fff;--mut:#6b5742;--acc:#d9650a;--acc2:#a8570a}}
+:root[data-theme="dark"]{--bg:#1a120b;--fg:#f3e9dc;--card:#2a1d12;--mut:#c4b29c;--acc:#ff8a1f;--acc2:#ffd166}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Vazirmatn',Tahoma,sans-serif;line-height:2;overflow-x:hidden}
+section{max-width:960px;margin:auto;padding:70px 20px}
+h2{font-size:clamp(1.6rem,5vw,2.4rem);font-weight:900;margin:0 0 20px;color:var(--acc)}
+p{color:var(--mut);font-size:1.05rem}
+.hero{min-height:100vh;max-width:none;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 70%,#7a2f08,#2b1206 55%,#120a05);color:#f3e9dc}
+.hero p{color:#f0d9bd}
+.hero h1{font-size:clamp(2.2rem,9vw,4.8rem);font-weight:900;margin:0;background:linear-gradient(90deg,#ffd166,#ff8a1f,#ff4d1f,#ffd166);background-size:300%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite}
+@keyframes shine{to{background-position:300%}}
+.ember{position:absolute;bottom:-10px;width:6px;height:6px;border-radius:50%;background:#ffb347;box-shadow:0 0 10px #ff8a1f;animation:rise linear infinite;opacity:0}
+@keyframes rise{10%{opacity:1}to{transform:translateY(-105vh) translateX(40px);opacity:0}}
+.rex{width:min(88vw,520px);animation:breathe 3s ease-in-out infinite;filter:drop-shadow(0 20px 30px #000a)}
+@keyframes breathe{50%{transform:translateY(-8px) scale(1.02)}}
+.eye{animation:glow 1.6s ease-in-out infinite}@keyframes glow{50%{fill:#fff;filter:drop-shadow(0 0 6px #ffd166)}}
+.legA{transform-origin:250px 175px;animation:step 1.4s ease-in-out infinite}
+.legB{transform-origin:215px 175px;animation:step 1.4s ease-in-out infinite reverse}
+@keyframes step{50%{transform:rotate(-9deg)}}
+.tail{transform-origin:330px 150px;animation:wag 2.8s ease-in-out infinite}@keyframes wag{50%{transform:rotate(3deg)}}
+.btn{margin-top:18px;padding:14px 34px;font:inherit;font-weight:700;font-size:1.1rem;border:0;border-radius:50px;background:linear-gradient(135deg,#ffd166,#ff6a1f);color:#2b1206;cursor:pointer;box-shadow:0 8px 24px #ff6a1f66;transition:.2s}
+.btn:active{transform:scale(.94)}
+.by{position:relative;z-index:2;margin:0 0 18px;padding:8px 26px;border-radius:50px;border:1px solid #ffd16688;background:#ffffff14;backdrop-filter:blur(6px);color:#ffd166;font-weight:900;font-size:clamp(1.1rem,4vw,1.6rem);letter-spacing:.5px;animation:pop 1s cubic-bezier(.2,1.6,.4,1) both,pulse 3s 1s ease-in-out infinite}
+@keyframes pop{from{opacity:0;transform:translateY(-30px) scale(.6)}}
+@keyframes pulse{50%{box-shadow:0 0 28px #ff8a1f88}}
+.shake{animation:shake .6s}@keyframes shake{20%{transform:translate(-8px,5px)}40%{transform:translate(8px,-5px)}60%{transform:translate(-6px,-4px)}80%{transform:translate(6px,4px)}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.card{background:var(--card);border-radius:20px;padding:22px;border:1px solid #ff8a1f33;transition:.3s}
+.card:hover{transform:translateY(-6px) rotate(-1deg);border-color:var(--acc)}
+.card b{display:block;font-size:2.4rem;color:var(--acc2);line-height:1.3}
+.card h3{margin:8px 0;color:var(--fg)}.card p{margin:0;font-size:.95rem}
+.rv{opacity:0;transform:translateY(40px);transition:1s}.rv.on{opacity:1;transform:none}
+.bar{margin:14px 0}.bar span{display:flex;justify-content:space-between;font-size:.95rem;color:var(--mut)}
+.bar i{display:block;height:16px;border-radius:9px;background:linear-gradient(90deg,#ffd166,#ff4d1f);width:0;transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+.bar div{background:#8883;border-radius:9px;margin-top:4px}
+.tl{border-right:3px solid var(--acc);padding-right:22px;margin-right:8px}
+.tl div{position:relative;margin-bottom:26px}
+.tl div:before{content:"";position:absolute;right:-31px;top:12px;width:15px;height:15px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 6px #ff8a1f33}
+.tl h3{margin:0;color:var(--fg)}
+.flip{perspective:800px;height:190px;cursor:pointer}
+.flip>div{position:relative;height:100%;transition:.7s;transform-style:preserve-3d}
+.flip.f>div,.flip:hover>div{transform:rotateY(180deg)}
+.flip section,.flip em{position:absolute;inset:0;backface-visibility:hidden;border-radius:20px;padding:20px;display:flex;align-items:center;justify-content:center;text-align:center;font-style:normal;margin:0}
+.flip em{background:#7a2f08;color:#fff;font-weight:700;font-size:1.2rem}
+.flip section{background:#2f6b3a;color:#fff;transform:rotateY(180deg);font-size:.95rem;line-height:1.8}
+.sky{height:230px;border-radius:22px;position:relative;overflow:hidden;background:linear-gradient(#0a0618,#4a1a10 90%);margin-top:20px}
+.met{position:absolute;top:-30px;width:3px;height:90px;background:linear-gradient(#fff,#ff8a1f,transparent);transform:rotate(25deg);animation:fall 2.4s linear infinite}
+@keyframes fall{to{transform:translate(-260px,380px) rotate(25deg)}}
+.big{position:absolute;bottom:-60px;left:50%;width:120px;height:120px;margin-left:-60px;border-radius:50%;background:radial-gradient(#fff,#ff8a1f,#ff2d1f00 70%);animation:boom 4s ease-out infinite}
+@keyframes boom{0%{transform:scale(0)}60%{transform:scale(3);opacity:1}100%{transform:scale(4.5);opacity:0}}
+.foot{width:46px;display:inline-block;margin:0 8px;opacity:0;animation:print 4s infinite}
+.foot:nth-child(2){animation-delay:.8s;margin-top:20px}.foot:nth-child(3){animation-delay:1.6s}.foot:nth-child(4){animation-delay:2.4s;margin-top:20px}
+@keyframes print{20%,70%{opacity:.8}100%{opacity:0}}
+footer{text-align:center;padding:30px;color:var(--mut);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+<div class="by">✨ امیر همپائی ✨</div>
+<svg class="rex" viewBox="0 0 410 270" role="img" aria-label="تصویر تیرکس">
+<g class="tail"><path fill="#3f7a3a" d="M14 124 36 98Q66 78 108 84Q138 90 156 112Q200 104 250 112Q310 118 352 146Q380 160 396 156Q384 180 346 186Q300 192 272 196Q250 205 214 200Q180 196 160 170Q140 150 126 146L60 142Q30 140 14 124Z"/></g>
+<path fill="#2f5f2c" d="M150 112Q200 104 250 112Q310 118 352 146Q380 160 396 156Q384 180 346 186Q300 192 272 196L214 200Q190 160 150 112Z" opacity=".5"/>
+<path class="legB" fill="#2b5528" d="M205 170Q245 170 252 205L240 234 262 246V256H206L214 240 208 208Q196 190 205 170Z"/>
+<path class="legA" fill="#356a31" d="M240 168Q286 166 294 205L280 232 302 244V256H246L254 238 248 205Q232 190 240 168Z"/>
+<path fill="#356a31" d="M146 160l26 18-6 8-28-14z"/><path fill="#fff" d="M168 180l6 6-8 3z"/>
+<path d="M18 126Q70 146 124 138" stroke="#1c3a1a" stroke-width="4" fill="none"/>
+<path fill="#fff" d="M30 127l5 11 5-9zM48 131l5 11 5-8zM66 134l5 10 5-8zM84 135l5 10 5-8zM102 135l4 9 5-7z"/>
+<circle class="eye" cx="92" cy="101" r="6" fill="#ffd166"/><circle cx="92" cy="101" r="2.4" fill="#000"/>
+<circle cx="30" cy="108" r="2.4" fill="#1c3a1a"/>
+</svg>
+<h1>تیرانوزوروس رکس</h1>
+<p>«پادشاه مارمولک‌های ستمگر»؛ مخوف‌ترین شکارچی خشکی‌های زمین</p>
+<button class="btn" id="roar">🦖 غرش کن!</button>
+</header>
+
+<section class="rv"><h2>معرفی</h2>
+<p>تیرانوزوروس رکس (T. rex) یکی از بزرگ‌ترین دایناسورهای گوشت‌خوار تاریخ است. نامش از دو واژهٔ یونانی و لاتین می‌آید و یعنی «مارمولک ستمگرِ شاه». این نام را هنری فیرفیلد آزبورن در سال ۱۹۰۵ برایش انتخاب کرد. تی‌رکس حدود ۶۸ تا ۶۶ میلیون سال پیش، در اواخر دورهٔ کرتاسه، در غرب آمریکای شمالی زندگی می‌کرد و آخرین دایناسورهای غیرپرنده‌ای بود که پیش از انقراض بزرگ روی زمین گام برداشت.</p>
+<p>جالب است بدانید فاصلهٔ زمانی ما با تی‌رکس کمتر از فاصلهٔ تی‌رکس با استگوسوروس است؛ استگوسوروس حدود ۱۵۰ میلیون سال پیش می‌زیست!</p></section>
+
+<section><div class="grid">
+<div class="card rv"><b data-n="12">۰</b><h3>متر طول</h3><p>از نوک پوزه تا انتهای دم</p></div>
+<div class="card rv"><b data-n="8">۰</b><h3>تن وزن</h3><p>برآوردها بین ۶ تا ۹ تن است</p></div>
+<div class="card rv"><b data-n="60">۰</b><h3>دندان</h3><p>تا ۳۰ سانتی‌متر با ریشه</p></div>
+<div class="card rv"><b data-n="35000">۰</b><h3>نیوتن نیروی گاز</h3><p>برآورد قوی‌ترین گاز خشکی‌زیان</p></div>
+</div></section>
+
+<section class="rv"><h2>کالبدشناسی</h2>
+<div class="grid">
+<div class="card"><h3>💀 جمجمه</h3><p>تا ۱٫۵ متر طول داشت. استخوان‌های محکم و فشردهٔ آن تحمل فشار گازهای سهمگین را داشت.</p></div>
+<div class="card"><h3>🦷 دندان‌ها</h3><p>ضخیم و موزی‌شکل بودند؛ بیشتر شبیه میخ‌های بزرگ تا چاقو، مناسب خُرد کردن استخوان.</p></div>
+<div class="card"><h3>💪 دست‌ها</h3><p>حدود یک متر و فقط دو انگشتی. کوچک، اما بسیار قوی و عضلانی بودند.</p></div>
+<div class="card"><h3>👃 حواس</h3><p>بویایی فوق‌العاده و بینایی دوچشمی دقیق داشت؛ دیدش از بسیاری از شکارچیان امروزی بهتر بود.</p></div>
+</div></section>
+
+<section class="rv"><h2>گازِ بی‌رقیب</h2>
+<p>مقایسهٔ تقریبی نیروی گاز (برحسب نیوتن):</p>
+<div class="bar"><span>انسان<b>≈ ۷۰۰</b></span><div><i data-w="2"></i></div></div>
+<div class="bar"><span>شیر<b>≈ ۴٬۵۰۰</b></span><div><i data-w="13"></i></div></div>
+<div class="bar"><span>تمساح آب‌شور<b>≈ ۱۶٬۰۰۰</b></span><div><i data-w="46"></i></div></div>
+<div class="bar"><span>تی‌رکس<b>≈ ۳۵٬۰۰۰ یا بیشتر</b></span><div><i data-w="100"></i></div></div>
+</section>
+
+<section class="rv"><h2>شکار و غذا</h2>
+<p>تی‌رکس گوشت‌خوار بود و دایناسورهای گیاه‌خواری مثل تری‌سراتوپس و ادمونتوسوروس را شکار می‌کرد. گاهی هم از لاشه تغذیه می‌کرد. بر خلاف تصور فیلم‌ها، احتمالاً سرعت دویدنش در حد ۱۷ تا ۲۷ کیلومتر در ساعت بود، اما با گازِ مرگبار و قدرتش، شکار را در همان ضربهٔ اول از پا درمی‌آورد.</p>
+<div style="text-align:center;margin-top:20px">
+<svg class="foot" viewBox="0 0 40 60"><path fill="#ff8a1f" d="M20 4l6 22 8-18 2 24-8 4 6 14H10l6-14-8-4 2-24 8 18z"/></svg>
+<svg class="foot" viewBox="0 0 40 60"><path fill="#ff8a1f" d="M20 4l6 22 8-18 2 24-8 4 6 14H10l6-14-8-4 2-24 8 18z"/></svg>
+<svg class="foot" viewBox="0 0 40 60"><path fill="#ff8a1f" d="M20 4l6 22 8-18 2 24-8 4 6 14H10l6-14-8-4 2-24 8 18z"/></svg>
+<svg class="foot" viewBox="0 0 40 60"><path fill="#ff8a1f" d="M20 4l6 22 8-18 2 24-8 4 6 14H10l6-14-8-4 2-24 8 18z"/></svg></div></section>
+
+<section class="rv"><h2>مراحل رشد</h2>
+<div class="tl">
+<div><h3>جوجه‌دایناسور</h3><p>نوزادان کوچک بودند و احتمالاً پوشش پرمانند داشتند.</p></div>
+<div><h3>نوجوانی؛ جهش رشد</h3><p>بین ۱۴ تا ۱۸ سالگی روزانه حدود ۲ کیلوگرم وزن اضافه می‌کردند.</p></div>
+<div><h3>بزرگسالی</h3><p>حدود ۲۰ سالگی به اندازهٔ کامل می‌رسیدند و تا ۲۸ سالگی یا بیشتر عمر می‌کردند.</p></div>
+</div></section>
+
+<section class="rv"><h2>سو؛ مشهورترین فسیل</h2>
+<p>در سال ۱۹۹۰ سو هندریکسون، فسیل‌شناس آمریکایی، در داکوتای جنوبی اسکلتی را یافت که حدود ۹۰ درصد آن کامل بود. این نمونه «سو» نام گرفت و امروز در موزهٔ فیلد شیکاگو نگهداری می‌شود. سو تا امروز یکی از کامل‌ترین اسکلت‌های تی‌رکس است و اطلاعات بسیاری درباره زندگی آن‌ها به دانشمندان داده است.</p></section>
+
+<section class="rv"><h2>واقعیت یا افسانه؟</h2>
+<p>برای دیدن پاسخ روی کارت‌ها بزنید:</p>
+<div class="grid">
+<div class="flip"><div><em>تی‌رکس پَر داشت؟</em><section>احتمالاً نه. نمونه‌های پوست او فلس‌دار بوده؛ هرچند خویشاوندان کوچک‌ترش پر داشتند.</section></div></div>
+<div class="flip"><div><em>فقط حرکت را می‌دید؟</em><section>افسانه است! تی‌رکس بینایی دقیقی داشت و اشیای ساکن را هم می‌دید.</section></div></div>
+<div class="flip"><div><em>نزدیک‌ترین خویشاوند زنده؟</em><section>پرندگان! دایناسورهای گوشت‌خوار نیای پرندگان امروزی هستند.</section></div></div>
+</div></section>
+
+<section class="rv"><h2>پایان یک پادشاه</h2>
+<p>حدود ۶۶ میلیون سال پیش سیارکی عظیم به منطقهٔ چیکشولوب در مکزیک برخورد کرد. غبار، آتش‌سوزی و سرمای ناگهانی، زنجیرهٔ غذایی را درهم شکست و تی‌رکس همراه با بیشتر دایناسورها از میان رفت.</p>
+<div class="sky"><i class="met" style="left:80%"></i><i class="met" style="left:60%;animation-delay:.7s"></i><i class="met" style="left:95%;animation-delay:1.4s"></i><i class="big"></i></div>
+</section>
+<footer>ساخته‌شده با ❤️ برای دوستداران دایناسورها</footer>
+
+<script>
+for(let i=0;i<25;i++){const e=document.createElement('i');e.className='ember';e.style.cssText=`left:${Math.random()*100}%;animation-duration:${4+Math.random()*6}s;animation-delay:${Math.random()*5}s`;document.getElementById('top').append(e)}
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;const t=x.target;t.classList.add('on');
+t.querySelectorAll('[data-w]').forEach(i=>i.style.width=i.dataset.w+'%');
+t.querySelectorAll('[data-n]').forEach(c=>{const n=+c.dataset.n,s=performance.now();(function f(now){const p=Math.min((now-s)/1800,1);c.textContent=Math.round(n*p).toLocaleString('fa-IR');if(p<1)requestAnimationFrame(f)})(s)});
+io.unobserve(t)}),{threshold:.2});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+document.querySelectorAll('.flip').forEach(f=>f.onclick=()=>f.classList.toggle('f'));
+document.getElementById('roar').onclick=()=>{document.body.classList.add('shake');setTimeout(()=>document.body.classList.remove('shake'),600);
+try{const a=new (window.AudioContext||window.webkitAudioContext)(),o=a.createOscillator(),g=a.createGain(),l=a.createOscillator(),lg=a.createGain();
+o.type='sawtooth';o.frequency.setValueAtTime(140,a.currentTime);o.frequency.exponentialRampToValueAtTime(40,a.currentTime+1.6);
+l.frequency.value=28;lg.gain.value=40;l.connect(lg);lg.connect(o.frequency);
+g.gain.setValueAtTime(.0001,a.currentTime);g.gain.exponentialRampToValueAtTime(.5,a.currentTime+.2);g.gain.exponentialRampToValueAtTime(.0001,a.currentTime+1.7);
+o.connect(g);g.connect(a.destination);o.start();l.start();o.stop(a.currentTime+1.8);l.stop(a.currentTime+1.8)}catch(e){}};
+</script>
+</body>
+</html>
